@@ -9,6 +9,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/)
 [![Updated](https://img.shields.io/badge/Last%20Updated-2026--10-brightgreen.svg?style=flat-square)](https://github.com/)
+[![TokenDos Uptime](https://img.shields.io/badge/TokenDos%20Status-Operational-brightgreen.svg?style=flat-square)](https://www.tokendos.com)
+[![Latency](https://img.shields.io/badge/Avg%20Latency-~280ms-blue.svg?style=flat-square)](https://www.tokendos.com)
+[![Pelican Test](https://img.shields.io/badge/Pelican%20Test-Verified%20100%25-brightgreen.svg?style=flat-square)](./test-pelican.sh)
 
 [避坑指南（揭露6大套路）](#-一国内调用大模型-api-的-6-大行业套路与黑幕) • 
 [硬核验真军火库（鹈鹕测试）](#-二硬核验真军火库教你-1-秒测出中转是否掺水) • 
