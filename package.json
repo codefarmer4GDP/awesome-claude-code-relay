@@ -1,0 +1,31 @@
+{
+  "name": "pelican-tester",
+  "version": "1.0.0",
+  "description": "Authenticity benchmark and anti-counterfeiting CLI for Claude and OpenAI LLM relays via Pelican Test & Thinking verification.",
+  "main": "bin/pelican-tester.js",
+  "bin": {
+    "pelican-tester": "./bin/pelican-tester.js"
+  },
+  "scripts": {
+    "test": "node bin/pelican-tester.js"
+  },
+  "keywords": [
+    "pelican-test",
+    "claude-code",
+    "ai-relay",
+    "llm-benchmark",
+    "tokendos",
+    "anthropic-api",
+    "thinking-verification"
+  ],
+  "author": "TokenDos Team <business@tokendos.com>",
+  "homepage": "https://www.tokendos.com/tokendos-evidence?lang=zh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codefarmer4GDP/awesome-claude-code-relay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codefarmer4GDP/awesome-claude-code-relay/issues"
+  },
+  "license": "MIT"
+}

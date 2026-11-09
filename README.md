@@ -48,12 +48,15 @@
 
 ## 🧪 二、硬核验真军火库：教你 1 秒测出中转是否掺水
 
-为了让大家不再当冤大头，我们整理了目前业界最权威的 **4 套验真测试用例**，并在本仓库内置了自动化核验脚本 [`test-pelican.sh`](./test-pelican.sh)。
+为了让大家不再当冤大头，我们整理了目前业界最权威的 **4 套验真测试用例**，并在本仓库内置了自动化核验工具 [`pelican-tester`](./bin/pelican-tester.js) 与 [`test-pelican.sh`](./test-pelican.sh)。
 
 你可以直接在终端一行命令对任何服务商进行全自动真伪打分（支持检测鹈鹕生成、原厂 Thinking 思考块与往返延迟）：
 
 ```bash
-# 一行命令测试任意站点（将 BASE_URL 和 API_KEY 替换为目标服务商）
+# 方式 A：Node.js / npx 免安装跨平台一键运行（推荐，支持 Mac/Windows/Linux）
+npx pelican-tester YOUR_API_KEY https://api.tokendos.com
+
+# 方式 B：Bash 脚本直接测试
 bash <(curl -sL https://raw.githubusercontent.com/codefarmer4GDP/awesome-claude-code-relay/main/test-pelican.sh) YOUR_API_KEY https://api.tokendos.com
 ```
 
