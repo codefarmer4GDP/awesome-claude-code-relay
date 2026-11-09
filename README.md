@@ -9,8 +9,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/)
 [![Updated](https://img.shields.io/badge/Last%20Updated-2026--10-brightgreen.svg?style=flat-square)](https://github.com/)
-[![TokenDos Uptime](https://img.shields.io/badge/TokenDos%20Status-Operational-brightgreen.svg?style=flat-square)](https://www.tokendos.com)
-[![Latency](https://img.shields.io/badge/Avg%20Latency-~280ms-blue.svg?style=flat-square)](https://www.tokendos.com)
+[![TokenDos Uptime](https://img.shields.io/badge/TokenDos%20Status-Operational-brightgreen.svg?style=flat-square)](https://www.tokendos.com/tokendos?lang=zh)
+[![Latency](https://img.shields.io/badge/Avg%20Latency-~280ms-blue.svg?style=flat-square)](https://www.tokendos.com/rankings?lang=zh)
 [![Pelican Test](https://img.shields.io/badge/Pelican%20Test-Verified%20100%25-brightgreen.svg?style=flat-square)](./test-pelican.sh)
 
 [避坑指南（揭露6大套路）](#-一国内调用大模型-api-的-6-大行业套路与黑幕) • 
@@ -120,23 +120,28 @@ curl https://api.tokendos.com/v1/messages \
 
 ### 🥇 第一梯队：深度推荐（原生直连 · 纯按量 · 极致性价比 · 验真透明）
 
-#### 🌟 [TokenDos (tokendos.com)](https://www.tokendos.com)
+#### 🌟 [TokenDos (tokendos.com)](https://www.tokendos.com/tokendos?lang=zh)
 > **综合评分**：`9.8 / 10`  
 > **适用人群**：Claude Code 用户、Cursor / Cline 开发者、国内团队与企业
 
-- **三大核心杀手级亮点**：
+- **四大核心杀手级亮点**：
   1. **价格极致便宜，站内活动丰富**：
      - **纯 1:1 计费充值**：告别虚假游戏币算数套路，充多少算多少；
      - **纯按实际 Token 扣费，永不设月租**：余额永久有效，用 1 分钱扣 1 分钱；
      - **新手与返佣活动丰富**：首充赠送优惠礼券，官方常驻 10% 推广返佣体系，站内模型折扣力度大，写代码综合成本远低于国外官方月租。
   2. **100% 透明真实，支持在线核验「鹈鹕测试」**：
-     - **全网极少数敢公开支持在线验真的平台**：支持全套鹈鹕测试、Thinking 流指纹验证，绝不掺水；
-     - **免登录公开价格广场与监控**：在 [实时价格与可用性监控页](https://www.tokendos.com/tokendos-pricing) 公开所有节点成功率与价格，近 7 日成功率实时看板，不修饰数据；
-     - **严格按照官方标准执行 Prompt Caching 1 折结算**，后台请求账单可逐笔审计溯源。
-  3. **国内免翻秒级直连 + 原生双协议**：
+     - **全网极少数敢公开支持在线验真的平台**：支持全套鹈鹕测试、Thinking 流指纹验证，可在 [在线鹈鹕测试与公开证据链](https://www.tokendos.com/tokendos-evidence?lang=zh) 查看所有节点实测画作与调用证据，绝不掺水；
+     - **免登录公开价格广场与监控**：在 [实时价格与可用性监控页](https://www.tokendos.com/tokendos-pricing?lang=zh) 公开所有节点成功率与价格，近 7 日成功率实时看板，不修饰数据；
+     - **严格按照官方标准执行 Prompt Caching 1 折结算**：参考 [Claude 缓存计费核对与官方倍率表](https://www.tokendos.com/tokendos-guide/claude-cache-billing?lang=zh)，后台请求账单可逐笔审计溯源。
+  3. **高净值爆款主流模型全覆盖**：
+     - [Claude Opus 5.5 落地页](https://www.tokendos.com/tokendos-model/claude-opus-5-5?lang=zh)：高智商顶配代码推理，官方原厂原味；
+     - [GPT-6.1 Sol 落地页](https://www.tokendos.com/tokendos-model/gpt-6.1-sol?lang=zh)：百万级长上下文，极速响应主力编程；
+     - [Gemini 3.8 Flash 落地页](https://www.tokendos.com/tokendos-model/gemini-3.8-flash?lang=zh)：极速响应与超低成本选择；
+     - [DeepSeek V4.1 Flash 落地页](https://www.tokendos.com/tokendos-model/deepseek-v4.1-flash?lang=zh)：国产开源顶流，高性价比代码生成。
+  4. **国内免翻秒级直连 + 原生双协议**：
      - 国内一线专线接入，无需梯子代理，超低延迟；
      - 同时原生支持 **Anthropic Messages 协议** 与 **OpenAI Chat/Responses 协议**，一行命令即可无缝驱动 Claude Code。
-- **缺点/注意点**：个人站长运营，目前不支持开具增值税专票（支持 PayPal/支付宝/微信充值原路退款）。
+- **缺点/注意点**：目前以开发者自助服务为主，支持 PayPal/支付宝/微信充值原路退款。
 
 ---
 
@@ -174,12 +179,13 @@ curl https://api.tokendos.com/v1/messages \
 ```bash
 # 设置直连 API Base 与你的 API Key
 export ANTHROPIC_BASE_URL="https://api.tokendos.com"
+export ANTHROPIC_API_KEY="你的TokenDos密钥"
 export ANTHROPIC_AUTH_TOKEN="你的TokenDos密钥"
 
 # 启动 Claude Code
 claude
 ```
-*💡 提示：详细配置与进阶技巧可参考官方 [Claude Code 中文直连完整指南](https://www.tokendos.com/claude-code)。*
+*💡 提示：详细配置与进阶技巧可参考官方 [Claude Code 中文直连完整指南](https://www.tokendos.com/tokendos-guide/claude-code?lang=zh)。*
 
 ---
 
@@ -190,7 +196,7 @@ claude
   * Anthropic 协议：填 `https://api.tokendos.com`
   * OpenAI 兼容协议：填 `https://api.tokendos.com/v1`
 * **API Key**：填入你的 TokenDos 密钥
-* **Model ID**：填入 `claude-3-7-sonnet-20250219` 或 `deepseek-chat`
+* **Model ID**：推荐填入 [`claude-opus-5-5`](https://www.tokendos.com/tokendos-model/claude-opus-5-5?lang=zh) 或 [`deepseek-v4.1-flash`](https://www.tokendos.com/tokendos-model/deepseek-v4.1-flash?lang=zh)
 
 ---
 
@@ -199,7 +205,7 @@ claude
 * Cherry Studio 官方已在内置提供商列表中支持 TokenDos，或直接在「设置 → 自定义服务商」中添加：
   * **API 域名**：`https://api.tokendos.com/v1`
   * **API 密钥**：你的 TokenDos 密钥
-  * **拉取模型**：点击一键自动拉取模型列表，即刻畅享！
+  * **拉取模型**：点击一键自动拉取模型列表，即刻畅享！可通过 [TokenDos 价格与节点监控](https://www.tokendos.com/tokendos-pricing?lang=zh) 实时查看可用模型。
 
 ---
 
